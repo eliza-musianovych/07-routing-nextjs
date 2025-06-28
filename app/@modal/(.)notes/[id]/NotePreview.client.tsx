@@ -22,7 +22,7 @@ export default function NoteDetailsClient() {
     if (error || !note) return <p>Something went wrong.</p>;
 
     return (
-    <Modal onClose={() => router.back}>
+    <Modal onClose={() => router.back()}>
         <NotePreview note={note} />
     </Modal>
     )
